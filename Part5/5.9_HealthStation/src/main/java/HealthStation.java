@@ -7,4 +7,9 @@ public class HealthStation {
         return person.getWeight();
     }
 
+    public void feed(Person person) {
+        int currentWeight = person.getWeight();
+        person.setWeight(currentWeight + 1);
+    }
+
 }
