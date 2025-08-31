@@ -25,8 +25,13 @@ public class Main {
                 break;
             }
 
-            items.add(new Item(itemName, itemId));
+            Item newItem = new Item(itemName, itemId);
 
+            if (items.contains(newItem)) {
+                continue;
+            } else {
+                items.add(newItem);
+            }
         }
 
         System.out.println("==Items==");
