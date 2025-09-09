@@ -7,5 +7,6 @@ public class Main {
             Package gifts = new Package();
             gifts.addGift(book);
             System.out.println(gifts.totalWeight());
+
     }
 }
